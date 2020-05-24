@@ -60,4 +60,8 @@ export class ProductListComponent implements OnInit {
     toggleImage(): void {
         this.showImage = !this.showImage;
     }
+
+    onRatingClicked(message: string){
+        this.pageTitle = `Product list: ${message}`
+    }
 }
